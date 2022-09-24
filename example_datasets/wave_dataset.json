@@ -1,0 +1,98 @@
+{
+  "data": [
+    {
+      "title": "Fan Wave",
+      "alternate_titles": [
+        "Fane Wave exploding in every direction",
+        "Mesmerizing Fan Wave",
+        "Photograph of a rare, explosive fan wave"
+      ],
+      "positive_image_urls": [
+        "https://www.tamaragoochphoto.com/images/640/Fan-Waves-Photo-sao_5257.jpg",
+        "https://i.pinimg.com/236x/36/60/98/3660981a19e7a57ee85e6e2e4d235fe1--water-waves-ocean-waves.jpg"
+      ]
+    },
+    {
+      "title": "Shore Pound Barrel",
+      "alternate_titles": [
+        "Giant round barreling wave breaking right on sand",
+        "Photo from inside a round heaving shorepound barrel"
+      ],
+      "positive": ["photograph of a breaking wave; Shorepound Barrel"],
+      "negative": ["long exposure"]
+    },
+    {
+      "title": "Light Artful Foam",
+      "aesthetic_score": 6,
+      "aesthetic_weight": 0.9,
+      "positive": ["sea foam, waves; artful composition"],
+      "negative": ["Vector art", "Marine life decoration"]
+    },
+    {
+      "title": "Underwater Barreling Wave",
+      "aesthetic_score": 8,
+      "aesthetic_weight": 0.9,
+      "positive": [
+        "Underwater barrel; photograph of a breaking wave; tubular wave; high detail, sharp, clear, photograph; wave rings"
+      ],
+      "negative": []
+    },
+    {
+      "title": "Jaws, The most spectacular wave in Hawaii",
+      "aesthetic_score": 6,
+      "aesthetic_weight": 0.4,
+      "positive": [
+        "TEAHUPOO GOES XXL FOR CODE RED II, surf photo",
+        "JAWS GOES XXL for SWELL of the CENTURY"
+      ],
+      "negative": []
+    },
+    {
+      "title": "The biggest wave in the world",
+      "alternate_titles": [
+        "The biggest wave in the world, Nazare",
+        "World Record biggest wave in history",
+        "Giant beautiful wedged forms in the ocean"
+      ],
+      "positive": ["Swell of the Century, XXL Nazare; Giant Breaking Wave"],
+      "negative": []
+    },
+    {
+      "title": "Drone shot over breaking waves",
+      "positive": ["Waves, Beautiful Drone Shot"],
+      "negative": []
+    },
+    {
+      "title": "Wild, Unruly Double up",
+      "alternate_titles": ["Giant, Scary, Mutant Shaped Ocean"],
+      "positive_image_urls": [
+        "https://www.aquasports.tv/wp-content/uploads/2018/05/Shipstern-Bluff.jpg"
+      ]
+    },
+    {
+      "title": "Clear Wave Breaking",
+      "alternate_titles": [
+        "Crystal clear water, tubular shape",
+        "Clear water, breaking wave"
+      ],
+      "positive": ["Stunning Clear Wave Breaking"],
+      "negative": []
+    },
+    {
+      "title": "Surfer riding a prefect barreling wave",
+      "positive_image_urls": [
+        "https://media.thegospelcoalition.org/static-blogs/ray-ortlund/files/2010/04/20080208-big-wave-surfing-3.jpg"
+      ],
+      "aesthetic_score": 5,
+      "aesthetic_weight": 0.1
+    },
+    {
+      "title": "Perfect Barreling Wave, Pipeline Oahu",
+      "positive_image_url": [
+        "https://www.bosshunting.com.au/wp-content/uploads/2020/03/screen-shot-2017-03-01-at-83152-pm.png.webp"
+      ],
+      "aesthetic_score": 6,
+      "aesthetic_weight": 0.2
+    }
+  ]
+}
