@@ -40,7 +40,6 @@ def consolidate_results(input_dir):
         key_to_index = metadata["key_to_index"]
 
         print("Processing Title:", title)
-        print("alternate_titles:", alternate_titles)
 
         # Create a set of pruned negative results
         negative_results = {}

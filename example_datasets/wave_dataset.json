@@ -25,11 +25,20 @@
       "title": "Light Artful Foam",
       "aesthetic_score": 6,
       "aesthetic_weight": 0.9,
+      "alternate_titles": [
+        "Sea Foam",
+        "Ocean Bubbles and Foam",
+        "Beautiful Sea Foam"
+      ],
       "positive": ["sea foam, waves; artful composition"],
       "negative": ["Vector art", "Marine life decoration"]
     },
     {
       "title": "Underwater Barreling Wave",
+      "alternate_titles": [
+        "Ocean Wave from underwater",
+        "Underwater view of a barreling wave"
+      ],
       "aesthetic_score": 8,
       "aesthetic_weight": 0.9,
       "positive": [
@@ -39,6 +48,10 @@
     },
     {
       "title": "Jaws, The most spectacular wave in Hawaii",
+      "alternate_titles": [
+        "Giant Barrelling Wave",
+        "Massive, Ferocious, Tubular Wave"
+      ],
       "aesthetic_score": 6,
       "aesthetic_weight": 0.4,
       "positive": [
@@ -59,6 +72,7 @@
     },
     {
       "title": "Drone shot over breaking waves",
+      "alternate_titles": ["Ocean from above", "Waves from above"],
       "positive": ["Waves, Beautiful Drone Shot"],
       "negative": []
     },
@@ -80,6 +94,10 @@
     },
     {
       "title": "Surfer riding a prefect barreling wave",
+      "alternate_titles": [
+        "Surfer on an epic wave",
+        "Giant Wave with a surfer in the barrel"
+      ],
       "positive_image_urls": [
         "https://media.thegospelcoalition.org/static-blogs/ray-ortlund/files/2010/04/20080208-big-wave-surfing-3.jpg"
       ],
@@ -88,6 +106,7 @@
     },
     {
       "title": "Perfect Barreling Wave, Pipeline Oahu",
+      "alternate_titles": ["Banzai Pipeline, Oahu, Hawaii"],
       "positive_image_urls": [
         "https://www.bosshunting.com.au/wp-content/uploads/2020/03/screen-shot-2017-03-01-at-83152-pm.png.webp"
       ],
