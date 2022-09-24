@@ -16,7 +16,7 @@ AESTHETIC_SCORE = "6"
 NEGATIVE_FILTER_PERCENT = 0.2
 ENABLE_WANDB = False
 PROCESSES_COUNT = 8
-RESULT_COUNT = 5
+RESULT_COUNT = 50
 IMAGE_SIZE = 512
 
 
@@ -144,7 +144,7 @@ def fetch_and_save_dataset(dataset_file_path, output_dir):
 
         positive = example.get("positive", [])
         negative = example.get("negative", [])
-        alternative_titles = example.get("alternative_titles", [])
+        alternate_titles = example.get("alternate_titles", [])
 
         all_for_title = []
 
@@ -179,14 +179,18 @@ def fetch_and_save_dataset(dataset_file_path, output_dir):
         # But for now makes it easier to process
         title_metadata = {}
         keys = []
+        key_to_index = {}
         for metadata in all_for_title:
             key = get_image_key(image_idx)
             keys.append(key)
+
+            key_to_index[key] = image_idx
             image_idx += 1
 
         title_metadata["negative"] = negative
         title_metadata["keys"] = keys
-        # TODO: Make an alternative title for each image that reuses it's caption data
+        title_metadata["key_to_index"] = key_to_index
+        # TODO: Make an alternate title for each image that reuses it's caption data
         # or CLIP data.
         #
         # We want the set of text for image to be of multiple options weighted differently.
@@ -197,7 +201,7 @@ def fetch_and_save_dataset(dataset_file_path, output_dir):
         # 2. Alternative title (20%)
         # 3. {Title}; {Caption } or {Title}, Caption(15%)
         # 3. Caption (5%)
-        title_metadata["alternative_titles"] = alternative_titles
+        title_metadata["alternate_titles"] = alternate_titles
         title_metadata["title"] = title
         batch_metadata_per_title[title] = title_metadata
 
