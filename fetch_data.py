@@ -16,7 +16,7 @@ AESTHETIC_SCORE = "6"
 NEGATIVE_FILTER_PERCENT = 0.2
 ENABLE_WANDB = False
 PROCESSES_COUNT = 8
-RESULT_COUNT = 50
+RESULT_COUNT = 500
 IMAGE_SIZE = 512
 
 
@@ -231,6 +231,7 @@ def fetch_and_save_dataset(dataset_file_path, output_dir):
         image_size=IMAGE_SIZE,
         output_folder=image_dir,
         enable_wandb=ENABLE_WANDB,
+        resize_mode="no",
         processes_count=PROCESSES_COUNT,
     )
 
@@ -247,6 +248,13 @@ def fetch_and_save_dataset(dataset_file_path, output_dir):
             for key in title_metadata["keys"]:
                 image_path = key + ".jpg"
                 image_path = os.path.join(image_dir, image_path)
+
+                # Check that file exists otherwise remove key
+                if not os.path.exists(image_path):
+                    # remove key from keys
+                    title_metadata["keys"].remove(key)
+                    continue
+
                 dist = get_clip_distance(image_path, negative_text)
 
                 # Convert single value tensor to float
